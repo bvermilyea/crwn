@@ -27,11 +27,6 @@ const Home = () => {
       title: 'mens',
       imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
     },
-    {
-      id: 6,
-      title: 'kids',
-      imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
-    },
   ]
 
   return <Directory categories={categories} />
