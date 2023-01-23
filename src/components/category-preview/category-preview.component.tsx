@@ -1,4 +1,6 @@
-import ProductCard from '../../components/product-card/product-card.component'
+import { FC } from 'react'
+
+import ProductCard from '../product-card/product-card.component'
 
 import {
   CategoryPreviewContainer,
@@ -6,7 +8,14 @@ import {
   Title,
 } from './category-preview.styles'
 
-const CategoryPreview = ({ title, products }) => {
+import { CategoryItem } from '../../store/categories/categories.types'
+
+type CategoryPreviewProps = {
+  title: string
+  products: CategoryItem[]
+}
+
+const CategoryPreview: FC<CategoryPreviewProps> = ({ title, products }) => {
   return (
     <CategoryPreviewContainer>
       <Title to={title}>{title.toUpperCase()}</Title>
