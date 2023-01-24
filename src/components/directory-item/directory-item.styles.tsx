@@ -28,6 +28,11 @@ export const Body = styled.div`
     font-weight: lighter;
     font-size: 16px;
   }
+
+  @media screen and (max-width: 600px) and (min-width: 470px) {
+    padding: 10px;
+  }
+
 `
 
 export const BackgroundImage = styled.div<BackgroundImageProps>`
@@ -72,4 +77,9 @@ export const DirectoryItemContainer = styled.div`
   &:last-child {
     margin-left: 7.5px;
   }
+
+  @media screen and (max-width: 800px) {
+    height: 200px;
+  }
+
 `

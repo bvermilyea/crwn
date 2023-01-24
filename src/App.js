@@ -5,9 +5,9 @@ import { Route, Routes } from 'react-router-dom'
 
 import Spinner from './components/spinner/spinner.components';
 import { checkUserSession } from './store/user/user.action';
+import Authentication from './routes/authentication/authentication.component'
 
 const Home = lazy(() => import('./routes/home/home.component'))
-const Authentication = lazy(() => import('./routes/authentication/authentication.component'))
 const Shop = lazy(() => import('./routes/shop/shop.components'))
 const Checkout = lazy(() => import('./routes/checkout/checkout.component'))
 const Navigation = lazy(() => import('./routes/navigation/navigation.component'))
